@@ -1,5 +1,5 @@
 // Sizing
-const size = 3000;
+const size = 1000;
 const ratio = 1.4;
 
 const width = size;
