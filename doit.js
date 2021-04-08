@@ -1,5 +1,5 @@
 // Sizing
-const size = 1000;
+const size = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? 1000 : 3000;
 const ratio = 1.4;
 
 const width = size;
