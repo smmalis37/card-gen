@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Steve's Card Generator</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <script src="doit.js"></script>
+</head>
+
+<body onresize="update()" onload="update()">
+    <div class="container">
+        <label for="name">Name:</label><input id="name" type="text" oninput="update()" />
+
+        <span></span><span></span><span></span><span></span>
+
+        <label class="description" for="alias">Alias:</label><input id="alias" type="text" oninput="update()" />
+        <label class="description" for="age">Age:</label><input id="age" type="text" oninput="update()" />
+        <label class="description" for="country">Country:</label><input id="country" type="text" oninput="update()" />
+        <label class="description" for="height">Height:</label><input id="height" type="text" oninput="update()" />
+        <label class="description" for="weight">Weight:</label><input id="weight" type="text" oninput="update()" />
+        <label class="description" for="style">Fighting style:</label><input id="style" type="text"
+            oninput="update()" />
+
+        <span></span><span></span><span></span><span></span>
+
+        <label class="stat" for="skill">Skill:</label><input id="skill" type="range" min=0 max=5 oninput="update()" />
+        <label class="stat" for="speed">Speed:</label><input id="speed" type="range" min=0 max=5 oninput="update()" />
+        <label class="stat" for="strength">Strength:</label><input id="strength" type="range" min=0 max=5
+            oninput="update()" />
+        <label class="stat" for="stamina">Stamina:</label><input id="stamina" type="range" min=0 max=5
+            oninput="update()" />
+        <label class="stat" for="aggressive">Aggressiveness:</label><input id="aggressive" type="range" min=0 max=5
+            oninput="update()" />
+        <label class="stat" for="attack">Attack:</label><input id="attack" type="range" min=0 max=5
+            oninput="update()" />
+        <label class="stat" for="defense">Defense:</label><input id="defense" type="range" min=0 max=5
+            oninput="update()" />
+
+        <span></span><span></span><span></span><span></span>
+
+        <label for="logo">Logo:</label><input id="logo" type="file" oninput="update()" />
+        <span></span>
+        <span>For best results ensure your logo image has a transparent background and is scaled to a square aspect
+            ratio.</span>
+
+        <label for="file">Character:</label><input id="file" type="file" oninput="update()" />
+        <span></span>
+        <span>For best results ensure your character image has a transparent background and is scaled to a 1:2 aspect
+            ratio.</span>
+    </div>
+
+    <canvas id="output">Your browser does not support the HTML5 canvas tag.</canvas>
+
+</body>
+
+</html>

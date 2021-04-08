@@ -1,0 +1,21 @@
+body {
+  padding: 0;
+  margin: 20px;
+  background-color: grey;
+}
+
+.container {
+  float: left;
+  display: grid;
+  grid-template-columns: [labels] max-content [inputs] 15rem;
+  grid-column-gap: 1rem;
+  grid-row-gap: 5px;
+}
+
+.container label {
+  justify-self: end;
+}
+
+#output {
+  float: right;
+}
